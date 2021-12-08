@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container nav_container">
+    <div class="nav-inner-container">
+      <a class="icon navbar-toggler first-button hamburger_icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <img src="./images/logo.svg" alt="">
+      <nav class="nav nav_links ">
+
+
+        <a class="nav-link" href="#">Collections</a>
+        <a class="nav-link" href="#">Men</a>
+        <a class="nav-link" href="#">Woman </a>
+        <a class="nav-link" href="#">About </a>
+        <a class="nav-link" href="#">Contact </a>
+
+
+
+      </nav>
+      <nav class="nav nav-right-top">
+        <img id="cart_btn" src="./images/icon-cart.svg" />
+        <img src="./images/image-avatar.png" alt="">
+      </nav>
+    </div>
+
+
+    <div class="side_menu" id="side_menu">
+      <i class="fas fa-times" id="side_menu_close"></i>
+      <ul>
+        <li><a class="nav-link" href="#">Collections</a></li>
+        <li><a class="nav-link" href="#">Men</a></li>
+        <li><a class="nav-link" href="#">Woman</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+        <li><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+    <hr>
+  </section>
+
+
+  <div class="cart_view_container_out" id="cart_view_container">
+    <div class="container cart_view_container">
+      <div class="cart_view">
+        <div class="cart_view_top">
+          <h5>Cart</h5>
+          <a href="">Empty Cart</a>
+        </div>
+
+        <hr>
+        <div class="in_cart_product_list">
+
+          <div class="in_cart_product">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            <div>
+              <h6>Product name</h6>
+              <p>$100 x 2 = 100</p>
+            </div>
+            <i class="far fa-trash-alt"></i>
+          </div>
+          <div class="in_cart_product">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            <div>
+              <h6>Product name</h6>
+              <p>$100 x 2 = 100</p>
+            </div>
+            <i class="far fa-trash-alt"></i>
+          </div>
+
+        </div>
+        <div class="cart_view_button_container">
+          <button class="btn-primary view_cart">Edit Cart</button>
+          <button class="btn-primary  checkout_btn">Check Out</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="product_expanded_view_container" class="product_expanded_view_container">
+    <div class="container product_expanded_view_inner">
+      <div class="product_expanded_view_top_controle">
+        <i class="fas fa-times" id="product_expanded_view_container_close"></i>
+      </div>
+      <div class="product_expanded_view_img_container">
+        <img id="product_expanded_view_img" class="product_expanded_view_img" src="./images/image-product-1.jpg" alt="">
+        <div class="product_image_thumb_expanded_container">
+          <img class="product_image_tumb product_image_tumb_expanded" src="./images/image-product-1-thumbnail.jpg"
+            alt="">
+          <img class="product_image_tumb product_image_tumb_expanded" src="./images/image-product-2-thumbnail.jpg"
+            alt="">
+          <img class="product_image_tumb product_image_tumb_expanded" src="./images/image-product-3-thumbnail.jpg"
+            alt="">
+          <img class="product_image_tumb product_image_tumb_expanded" src="./images/image-product-4-thumbnail.jpg"
+            alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <section style="margin-bottom: 5rem;">
+
+    <div class="container landing_container_custom">
+
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="product_image_container">
+
+            <div class="mobile_slider_container">
+              <div class="slide_Contoles">
+                <i id="arrow_left" class="fas fa-arrow-circle-left"></i>
+                <i id="arrow_right" class="fas fa-arrow-circle-right"></i>
+              </div>
+              <div class="mobile_slide">
+
+                <img class="mobile_slide_img" src="./images/image-product-1.jpg" alt="">
+                <img class="mobile_slide_img" src="./images/image-product-2.jpg" alt="">
+                <img class="mobile_slide_img" src="./images/image-product-3.jpg" alt="">
+                <img class="mobile_slide_img" src="./images/image-product-4.jpg" alt="">
+
+              </div>
+
+
+            </div>
+
+
+
+            <img class="product_image" id="product_image" src="./images/image-product-1.jpg" alt="">
+          </div>
+          <div class="product_image_tumb_container">
+            <img class="product_image_tumb product_image_tumb_hero" src="./images/image-product-1-thumbnail.jpg" alt="">
+            <img class="product_image_tumb product_image_tumb_hero" src="./images/image-product-2-thumbnail.jpg" alt="">
+            <img class="product_image_tumb product_image_tumb_hero" src="./images/image-product-3-thumbnail.jpg" alt="">
+            <img class="product_image_tumb product_image_tumb_hero" src="./images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="primary_content_container">
+            <h5>SNEAKERS COMPANY</h5>
+            <h1>Fall Limited Edition <br> Sneakers</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum euismod, nisi vel consectetur interdum, nisl nisl
+              aliquet nunc, eget sagittis nisl nisl eu nisi.
+            </p>
+            <div class="product_price">
+              <p>$100.00</p>
+              <div class="off_rate_container">
+                <p class="off_rate">50%</p>
+
+              </div>
+            </div>
+            <del>
+              <p>$150.00</p>
+            </del>
+
+            <div class="row">
+              <div class="col-md-4 add_cart_contoles_container">
+                <div class="add_cart_contoles">
+                  <p>-</p>
+                  <h6>0</h6>
+                  <p>+</p>
+                </div>
+              </div>
+              <div class="col-md-8 add_cart_button_container">
+                <button class="add_cart_button"> <i class="fas fa-cart-plus"></i> Add to cart</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <script src="./script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
